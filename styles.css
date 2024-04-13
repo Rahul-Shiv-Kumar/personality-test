@@ -1,0 +1,135 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 20px; /* Added padding for better spacing */
+  background-color: #E0FFFF; /* Light blue background */
+}
+.background{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  max-width: 800px; 
+  padding: 20px; 
+  text-align: center;
+  background-color: #FFF; /* White background */
+  border-radius: 20px; /* border radius for a softer look */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* box shadow for depth */
+}
+
+.screen {
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slide-up 0.5s ease;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: #4CAF50; /* main color */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Brand color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker shade of main color */
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options-container button {
+  margin: 10px;
+}
+
+#share-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+#share-options button {
+  background-color: #4CAF50; 
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease;
+  
+}
+
+#share-options button:hover {
+  transform: scale(1.1);
+}
+
+#share-options button i {
+  font-size: 24px;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+footer {
+  background-color: #4CAF50; 
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: absolute;
+  bottom:0px;
+  width: 100%;
+}
+
+.container-footer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-links-footer {
+  margin-top: 10px;
+}
+
+.social-links-footer a {
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-links-footer a:hover {
+  transform: scale(1.2);
+}
