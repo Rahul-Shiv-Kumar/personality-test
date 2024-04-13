@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personality Quiz by Rahul SK</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</script>
+</head>
+<body>
+  <div class="background">
+    <div class="container">
+      <div id="welcome-screen" class="screen">
+        <h1>Welcome to the Personality Quiz!</h1>
+        <button id="start-btn">Start Quiz</button>
+      </div>
+      <div id="question-screen" class="screen">
+        <div class="card">
+          <h2 id="question-text">What type of person Are you?</h2>
+          <div id="options" class="options-container"></div>
+        </div>
+      </div>
+      <div id="results-screen" class="screen hidden">
+        <div class="card">
+          <h2 id="result-text">Your Result:</h2>
+          <div id="result-icon">
+            <span id="emoji-selection">
+              <button onclick="selectEmoji('😊')">😊</button>
+              <button onclick="selectEmoji('😡')">😡</button>
+              <button onclick="selectEmoji('😎')">😎</button>
+            </span>
+          </div>
+          <div id="share-options" class="hidden">
+            <button id="whatsapp-btn"><i class="fab fa-whatsapp"></i></button>
+            <button id="facebook-btn"><i class="fab fa-facebook"></i></button>
+            <button id="instagram-btn"><i class="fab fa-instagram"></i></button>
+            <button id="copy-link-btn"><i class="fa fa-link"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+<footer>
+  <div class="container-footer">
+    <p>&copy; 2024 Rahul Shiv Kumar</p>
+    <div class="social-links-footer">
+      <a href="https://www.facebook.com/rahul.raymondv/"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://github.com/Rahulraymond/"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/rahul_raymond/"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
